@@ -54,6 +54,9 @@ header {
     border-radius: 1em;
     backdrop-filter: contrast(80%) brightness(150%) blur(3px);
     font-size: 1.5em;
+    @media screen and (max-width: 500px) {
+      width: 80vw;
+    }
   }
   &__wrapper {
     display: flex;
