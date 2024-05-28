@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>BigZetena FrontEnd Developer</title>
+  </head>
+  <body>
+    <header>
+      <img class="header__img" src="./src/images/avatar.jpg" alt="avatar" />
+      <p class="header__name">bigzetena</p>
+      <h1 class="header__info">FrontEnd Developer</h1>
+    </header>
+    <main>
+      <ul class="list">
+        <li class="list__item">
+          <a href="https://t.me/BigZet" class="list__link">
+            <div class="list__wrapper">
+              <img
+                src="./src/images/icons/telegram.svg"
+                alt="tg icon"
+                class="list__icon"
+              />
+              <span>Telegram</span>
+            </div></a
+          >
+        </li>
+        <li class="list__item">
+          <a href="https://vk.com/bigzetena" class="list__link">
+            <div class="list__wrapper">
+              <img
+                src="./src/images/icons/vk.svg"
+                alt="vk icon"
+                class="list__icon"
+              />
+              <span>VK</span>
+            </div></a
+          >
+        </li>
+        <li class="list__item">
+          <a href="mailto:v.o.sharipov@gmail.com" class="list__link">
+            <div class="list__wrapper">
+              <img
+                src="./src/images/icons/envelope-at-fill.svg"
+                alt="mail icon"
+                class="list__icon"
+              />
+              <span>Gmail</span>
+            </div></a
+          >
+        </li>
+        <li class="list__item">
+          <a href="https://github.com/BigZetena" class="list__link">
+            <div class="list__wrapper">
+              <img
+                src="./src/images/icons/github.svg"
+                alt="github icon"
+                class="list__icon"
+              />
+              <span>GitHub</span>
+            </div></a
+          >
+        </li>
+      </ul>
+      <div id="back" class="background"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      VANTA.BIRDS({
+        el: "#back",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 1000.0,
+        minWidth: 2000.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        quantity: 4.0,
+        backgroundAlpha: 0.0,
+      });
+    </script>
+  </body>
+</html>
